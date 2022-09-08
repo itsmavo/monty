@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * nop - the opcode doesn't do anything

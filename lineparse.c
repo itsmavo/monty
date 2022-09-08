@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * line_parse - parses through a line and returns the proper instruction

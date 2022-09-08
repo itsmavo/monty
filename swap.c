@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 
 /**
  * swap - switches the two top elements of the stack.
