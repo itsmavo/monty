@@ -49,7 +49,14 @@ instruction_t *line_parse(char *line)
         instruct->f = mod;
       if (strcmp(instruct->opcode, "pchar") == 0)
         instruct->f = pchar;
-
+      if(strcmp(instruct->opcode, "pstr") == 0)
+	instruct->f = pstr;
+      if(strcmp(instruct->opcode, "rotl") == 0)
+	instruct->f = rotl;
+      if(strcmp(instruct->opcode, "rotr") == 0)
+	instruct->f = rotr;
+      if(strcmp(instruct->opcode, "stack") == 0)                                                instruct->f = stack;
+      if(strcmp(instruct->opcode, "queue") == 0)                                                instruct->f = queue; 
     }
   return (instruct);
 }
