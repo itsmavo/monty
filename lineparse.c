@@ -39,6 +39,17 @@ instruction_t *line_parse(char *line)
         instruct->f = add;
       if (strcmp(instruct->opcode, "nop") == 0)
         instruct->f = nop;
+      if (strcmp(instruct->opcode, "sub") == 0)
+        instruct->f = sub;
+      if (strcmp(instruct->opcode, "div") == 0)
+        instruct->f = divi;
+      if (strcmp(instruct->opcode, "mul") == 0)
+        instruct->f = mul;
+      if (strcmp(instruct->opcode, "mod") == 0)
+        instruct->f = mod;
+      if (strcmp(instruct->opcode, "pchar") == 0)
+        instruct->f = pchar;
+
     }
   return (instruct);
 }
